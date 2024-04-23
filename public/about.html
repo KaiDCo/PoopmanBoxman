@@ -30,24 +30,70 @@
 body{        
     background-color: rgb(120, 250, 159);
 }
-#main{
+@media (min-width: 1400px) {
+    #main{
+        background-color: azure;
+        padding: 50px;
+        margin: 50px 250px;
+    }
+    img{
+        width: 25%;
+        margin: 10px;
+    }   
+    p{
+    font-size: 20px;
+    }
+    #split{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #textp{
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 701px) and (max-width:1399px) {
+    #main{
     background-color: azure;
     padding: 50px;
-    margin: 50px 250px;
+    margin: auto;
+    }
+    img{
+        width: 25%;
+        height: 25%;
+        margin: 10px;
+        margin-top: 50px;
+    }
+    p{
+    font-size: 2vh;
+    }
+    #split{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #textp{
+        display: flex;
+        align-items: center;
+    }
 }
-img{
-    width: 25%;
-    margin: 10px;
+
+@media (max-width: 700px){
+    #main{
+    background-color: azure;
+    padding: 50px;
+    margin: auto;
+    }
+    img{
+        width: 50%;
+        height: 50%;
+        margin: 10px;
+    }
+    #split{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
-#split{
-    display: flex;
-    flex-direction: row-reverse;
-}
-#textp{
-    display: flex;
-    align-items: center;
-}
-p{
-    font-size: 20px;
-}
+
 </style>
