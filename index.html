@@ -12,6 +12,7 @@
         <h2 id="subtitle">Illustrator | Fighting Game Enthusiast </h2>
         <div id="butorg">
             <button><a href="./public/about.html" class="buttonformat">ABOUT</a></button>
+            <button><a href="https://linktr.ee/poopmanboxman" class="buttonformat">SOCIAL</a></button>
             <button><a href="mailto:poopmanboxmaarts@gmail.com" class="buttonformat">CONTACT</a></button>
         </div>
         <h3>email: poopmanboxmanarts@gmail.com</h3>
@@ -155,17 +156,38 @@
         border-color: beige;
         margin: 5px;
     }
-    .icono{
-        height: 32px;
-        width: fit-content;
-        margin: 10px;
+    
+    @media screen and (orientation: landscape) {
+        .icono{
+            height: 32px;
+            width: fit-content;
+            margin: 10px;
+        }
+        #sochead{
+            text-decoration: none;
+            color: #000;
+        }
+        #vgen{
+            height: 48px;
+        }
     }
-    #sochead{
-        text-decoration: none;
-        color: #000;
-    }
-    #vgen{
-        height: 48px;
+    @media screen and (orientation: portrait){
+        .icono{
+            height: 20px;
+            width:  min-content;
+            margin: 10px;
+        }
+        #sochead{
+            text-decoration: none;
+            color: #000;
+        }
+        #vgen{
+            height: 34px;
+        }
+        #avatar{
+            height: 100px;
+            width: auto;
+        }
     }
     #social{
         display: flex;
