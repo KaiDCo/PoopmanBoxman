@@ -68,6 +68,15 @@
             </div>
         </div>
     </div>
+    <div id="Convention">
+        <h2>Anime Magic</h2>
+        <div id="info">
+            <img src="./assets/images/ArtistAlleyLocationAnimeMagic01.png" class="conven">
+            <img src="./assets/images/ArtistAlleyLocationAnimeMagic02.png" class="conven">
+            <img src="./assets/images/Post1.png" class="conven">
+            <img src="./assets/images/Post2.png" class="conven">
+        </div>
+    </div>
     <div id="fight">
         <h2> My Casual Fighting Game Achievements</h2>
         <a href="./public/fightingachievement.html">My Achievements</a>
@@ -111,6 +120,11 @@
         padding: 10px;
         background-color: azure;
     }
+    #Convention{
+        margin: 20px;
+        padding: 10px;
+        background-color: azure;
+    }
     #Schedule{
         font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
         margin-left: 20px;
@@ -125,7 +139,7 @@
         flex-direction: row;
         justify-content: space-evenly;
     }
-    
+
     a{
         margin: auto;
     }
@@ -181,6 +195,14 @@
             width: 30%;
             margin: 10px;
         }
+        #info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        }
+        .conven{
+            margin: 10px;
+        }
     }
     @media screen and (orientation: portrait){
         .icono{
@@ -220,10 +242,17 @@
             align-items: center;
             padding: 20px;
         }
-        .landscape{
-            height: 100px;
-            width: min-content;
+        .landscape {
             margin: 10px
+        }
+        #info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        .conven{
+        height: 250px;
+        width: 200px;
         }
     }
     #social{
@@ -231,4 +260,5 @@
         flex-direction: row;
         align-items: center;
     }
+    
 </style>
