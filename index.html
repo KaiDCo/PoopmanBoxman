@@ -33,7 +33,7 @@
     </div>
     <div id="Gallery">
         <h2 id="galtext">Gallery</h2>
-        <div id="imageOrg">
+            <div id="imageOrg">
                 <img src="./assets/images/Aba.png" alt="Aba tic tac toe PoopManBoxMan"/>
                 <img src="./assets/images/Calli.png" alt="Calliope Mori PoopManBoxMan">
                 <img src="./assets/images/ElpheltFingerBang.png" alt="ElpheltFingerBang PoopManBoxMan">
@@ -66,6 +66,29 @@
                 <img src="./assets/images/Arcie_FanArt_S2.jpg" alt="Arona Cheerleader Blue Archive PoopManBoxMan">
                 <img src="./assets/images/BelleSwimsuit.jpg" alt="Belle Swimsuit ZZZ PoopManBoxMan">
             </div>
+    </div>
+    <div id ="WIP">
+        <h2 id="WIPtext">Work In Progress</h2>
+        <div id="BelleSummer">
+                <h2 id="WIPtitle">ZZZ Belle Summer Outfit</h2>
+                <div class="Progession">
+                    <div class="drawing">
+                        <a href="../assets/images/WIP/Belle_Summer_Suit_WIP.jpg" target="_blank">
+                            <img width="400" height="450"  src="../assets/images/WIP/Belle_Summer_Suit_WIP.jpg"/>
+                        </a>
+                        <a href="../assets/images/WIP/Belle_Summer_WIP2.jpg" target="_blank">
+                            <img width="400" height="450"  src="../assets/images/WIP/Belle_Summer_WIP2.jpg"/>
+                        </a>
+                        <a href="../assets/images/WIP/Belle_Summer_Final.jpg" target="_blank">
+                            <img width="400" height="450"  src="../assets/images/WIP/Belle_Summer_Final.jpg"/>
+                        </a>
+                    </div>
+                </div>
+                <div id="WIPbutton">
+                    <button ><a href="./public/WIP.html" class="buttonformat">SHOW MORE</a></button>
+                </div>
+        </div>
+    </div>
     <div id="event">
         <h2 id="Schedule">Event Schedule</h2>
         <div>
@@ -150,6 +173,33 @@
         flex-direction: row-reverse;
         justify-content: space-evenly;
     }
+    #WIP{
+        background-color: rgb(227, 243, 170);
+        margin-top: 50px;
+        padding-bottom:20px ;
+    }
+     #WIPtext{
+        font-size: 5vh;
+        margin-left: 2vh;
+        padding-top: 20px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+       }
+    #WIPtitle{
+        margin-left: 10%;
+        font-size: 3vh;
+    }
+    #WIPbutton{
+        text-align: center;
+    }
+    .drawing{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    
     #event{
         margin: 20px;
         padding: 10px;
@@ -180,6 +230,7 @@
     }
     #fight{
         background-color: azure;
+        display: block;
     }
     .buttonformat{
         color: #000;
